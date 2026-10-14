@@ -1,5 +1,13 @@
 import type { Metadata, Viewport } from "next";
+import { Poppins } from "next/font/google";
 import "./globals.css";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "List Your Business on LiveCalicut | Free Registration",
@@ -67,8 +75,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full scroll-smooth">
-      <body className="min-h-full flex flex-col font-sans bg-white text-[#0f172a] antialiased selection:bg-[#ec2028]/15 selection:text-[#131b3b]">
+    <html lang="en" className={`h-full scroll-smooth ${poppins.variable}`}>
+      <body className={`${poppins.className} min-h-full flex flex-col bg-white text-[#0f172a] antialiased selection:bg-[#ec2028]/15 selection:text-[#131b3b]`}>
         {children}
       </body>
     </html>

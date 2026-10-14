@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Raleway:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 :root {
-  --font-poppins: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-raleway: 'Raleway', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-poppins: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   
   --lc-navy: #131b3b;
   --lc-blue: #2c3691;
@@ -22,7 +21,8 @@
 
 @theme {
   --font-heading: 'Poppins', sans-serif;
-  --font-body: 'Raleway', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+  --font-sans: 'Poppins', sans-serif;
   --color-lc-navy: #131b3b;
   --color-lc-blue: #2c3691;
   --color-lc-red: #ec2028;
@@ -38,7 +38,7 @@ html {
 body {
   background-color: #ffffff;
   color: #0f172a;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
 
