@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { RegistrationFormData, LeadRecord, ApiResponse } from '@/lib/types';
 import { saveLead, updateLeadEmailStatus } from '@/lib/lead-store';
 import { sendLeadNotificationEmail } from '@/lib/email-service';
+import { appendLeadToGoogleSheet } from '@/lib/sheets-service';
 
 // In-memory rate limiting map: ip -> Array of timestamps
 const rateLimitMap = new Map<string, number[]>();
@@ -153,24 +154,39 @@ export async function POST(request: NextRequest) {
       console.warn('[LiveCalicut Registration] Lead save fallback warning:', msg);
     }
 
-    // 6. Email Dispatch
-    const emailResult = await sendLeadNotificationEmail(leadRecord);
+    // 6. External Dispatches (Email & Google Sheets)
+    // Run both dispatches in parallel so registration response stays ultra-fast
+    const [emailSettled, sheetSettled] = await Promise.allSettled([
+      sendLeadNotificationEmail(leadRecord),
+      appendLeadToGoogleSheet(leadRecord),
+    ]);
 
-    if (emailResult.sent) {
-      await updateLeadEmailStatus(leadRecord.id, 'sent');
-    } else if (emailResult.reason === 'unconfigured') {
-      await updateLeadEmailStatus(leadRecord.id, 'queued_for_configuration');
+    if (emailSettled.status === 'fulfilled') {
+      const emailResult = emailSettled.value;
+      if (emailResult.sent) {
+        await updateLeadEmailStatus(leadRecord.id, 'sent');
+      } else if (emailResult.reason === 'unconfigured') {
+        await updateLeadEmailStatus(leadRecord.id, 'queued_for_configuration');
+      } else {
+        await updateLeadEmailStatus(leadRecord.id, 'failed', emailResult.error);
+      }
     } else {
-      // Configured provider returned an explicit delivery error
-      await updateLeadEmailStatus(leadRecord.id, 'failed', emailResult.error);
-      return NextResponse.json<ApiResponse>(
-        {
-          success: false,
-          message: `Your details were saved (Ref: ${referenceId}), but our notification email service encountered an issue: ${emailResult.error}. Our team has logged this lead.`,
-          referenceId,
-        },
-        { status: 502 }
-      );
+      console.warn('[LiveCalicut Registration] Email dispatch exception:', emailSettled.reason);
+      await updateLeadEmailStatus(leadRecord.id, 'failed', String(emailSettled.reason));
+    }
+
+    if (sheetSettled.status === 'fulfilled') {
+      const sheetResult = sheetSettled.value;
+      if (sheetResult.synced) {
+        leadRecord.sheetStatus = 'synced';
+      } else if (sheetResult.reason === 'unconfigured') {
+        leadRecord.sheetStatus = 'queued_for_configuration';
+      } else {
+        leadRecord.sheetStatus = 'failed';
+        leadRecord.sheetError = sheetResult.error;
+      }
+    } else {
+      console.warn('[LiveCalicut Registration] Sheet dispatch exception:', sheetSettled.reason);
     }
 
     // 7. Successful confirmed response

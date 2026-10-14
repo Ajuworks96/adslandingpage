@@ -24,6 +24,8 @@ export interface LeadRecord extends RegistrationFormData {
   createdAt: string;
   emailStatus: 'sent' | 'queued_for_configuration' | 'failed';
   emailError?: string;
+  sheetStatus?: 'synced' | 'queued_for_configuration' | 'failed';
+  sheetError?: string;
 }
 
 export interface ApiResponse<T = unknown> {
