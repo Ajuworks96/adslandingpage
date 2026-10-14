@@ -2,14 +2,17 @@ import fs from 'fs/promises';
 import path from 'path';
 import { LeadRecord } from './types';
 
-const DATA_DIR = path.join(process.cwd(), 'data');
+// In serverless environments (e.g. Vercel, AWS Lambda), the application root is read-only.
+// /tmp is the only writable directory on serverless runtimes.
+const isServerless = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
+const DATA_DIR = isServerless ? path.join('/tmp', 'data') : path.join(process.cwd(), 'data');
 const LEADS_FILE = path.join(DATA_DIR, 'leads.json');
 
 async function ensureDataDir() {
   try {
     await fs.mkdir(DATA_DIR, { recursive: true });
   } catch {
-    // Already exists or permission handled
+    // Already exists or handled
   }
 }
 
@@ -24,20 +27,33 @@ export async function getLeads(): Promise<LeadRecord[]> {
 }
 
 export async function saveLead(lead: LeadRecord): Promise<void> {
-  await ensureDataDir();
-  const leads = await getLeads();
-  // Check for duplicate recent submission with same mobile or email in last 2 minutes
-  const recentDuplicate = leads.find(
-    (l) =>
-      l.mobile === lead.mobile &&
-      new Date(l.createdAt).getTime() > new Date(lead.createdAt).getTime() - 2 * 60 * 1000
-  );
-  if (recentDuplicate) {
-    throw new Error('Duplicate submission detected. Please wait a moment before trying again.');
-  }
+  // Always log lead details so they are preserved in Vercel / serverless runtime logs
+  console.info(`[LiveCalicut Lead Engine] New submission [ID: ${lead.id}] for "${lead.businessName}" (${lead.mobile})`);
 
-  leads.unshift(lead); // newest first
-  await fs.writeFile(LEADS_FILE, JSON.stringify(leads, null, 2), 'utf-8');
+  try {
+    await ensureDataDir();
+    const leads = await getLeads();
+
+    // Check for duplicate recent submission with same mobile or email in last 2 minutes
+    const recentDuplicate = leads.find(
+      (l) =>
+        l.mobile === lead.mobile &&
+        new Date(l.createdAt).getTime() > new Date(lead.createdAt).getTime() - 2 * 60 * 1000
+    );
+    if (recentDuplicate) {
+      throw new Error('Duplicate submission detected. Please wait a moment before trying again.');
+    }
+
+    leads.unshift(lead); // newest first
+    const trimmed = leads.slice(0, 500);
+    await fs.writeFile(LEADS_FILE, JSON.stringify(trimmed, null, 2), 'utf-8');
+  } catch (err: unknown) {
+    if (err instanceof Error && err.message.includes('Duplicate submission')) {
+      throw err;
+    }
+    console.error('[LiveCalicut Lead Storage Warning]:', err);
+    console.info('[LiveCalicut Lead Fallback Payload]:', JSON.stringify(lead));
+  }
 }
 
 export async function updateLeadEmailStatus(
@@ -54,6 +70,6 @@ export async function updateLeadEmailStatus(
       await fs.writeFile(LEADS_FILE, JSON.stringify(leads, null, 2), 'utf-8');
     }
   } catch (err) {
-    console.error('Failed to update lead status:', err);
+    console.warn('[LiveCalicut Lead Engine] Could not update lead status on disk:', err);
   }
 }

@@ -141,13 +141,16 @@ export async function POST(request: NextRequest) {
       await saveLead(leadRecord);
     } catch (saveErr: unknown) {
       const msg = saveErr instanceof Error ? saveErr.message : 'Database error';
-      return NextResponse.json<ApiResponse>(
-        {
-          success: false,
-          message: msg,
-        },
-        { status: 400 }
-      );
+      if (msg.includes('Duplicate submission')) {
+        return NextResponse.json<ApiResponse>(
+          {
+            success: false,
+            message: msg,
+          },
+          { status: 429 }
+        );
+      }
+      console.warn('[LiveCalicut Registration] Lead save fallback warning:', msg);
     }
 
     // 6. Email Dispatch
