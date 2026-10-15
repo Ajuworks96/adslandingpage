@@ -195,7 +195,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
             {/* Supporting Text */}
             <p className="text-base sm:text-lg text-[#475467] leading-relaxed max-w-xl font-normal">
               കോഴിക്കോട്ടുകാർ നിങ്ങളുടെ അടുത്തുള്ള കടകളും സർവീസുകളും തിരയുമ്പോൾ, ഏറ്റവും മുന്നിൽ നിങ്ങൾ ഉണ്ടാവട്ടെ.{' '}
-              <strong className="text-[#131b3b] font-semibold">Calicut-ന്റെ local ecosystem-ന്റെ</strong> ഭാഗമായി കസ്റ്റമേഴ്സിനെ നേരിട്ട് നേടൂ.
+              <strong className="text-[#131b3b] font-semibold">Calicut-ന്റെ Digital ecosystem-ന്റെ</strong> ഭാഗമായി കസ്റ്റമേഴ്സിനെ നേരിട്ട് നേടൂ.
             </p>
 
             {/* Interactive Category Quick Pills */}
