@@ -14,7 +14,7 @@ import {
   Globe,
   RotateCcw,
 } from 'lucide-react';
-import { BUSINESS_CATEGORIES, KOZHIKODE_LOCATIONS, LIVECALICUT_WHATSAPP, LIVECALICUT_PHONE } from '@/lib/constants';
+import { BUSINESS_CATEGORIES, CALICUT_LOCATIONS, LIVECALICUT_WHATSAPP, LIVECALICUT_PHONE } from '@/lib/constants';
 import { RegistrationFormData, ApiResponse } from '@/lib/types';
 import { Confetti } from './Confetti';
 import { WhatsAppIcon } from './WhatsAppIcon';
@@ -248,7 +248,7 @@ export const RegistrationForm: React.FC<RegistrationFormProps> = ({
         <div className="text-center space-y-3 mb-10 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#fff1f2] border border-[#fecdd3] text-xs font-bold uppercase tracking-wider text-[#ec2028]">
             <span className="w-2 h-2 rounded-full bg-[#ec2028]" />
-            <span>Official Kozhikode Registration &bull; Instant Free Review</span>
+            <span>Official Calicut Registration &bull; Instant Free Review</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#131b3b] tracking-tight">
@@ -283,7 +283,7 @@ export const RegistrationForm: React.FC<RegistrationFormProps> = ({
               <p className="font-bold text-[#131b3b] uppercase tracking-wide text-xs">What happens next:</p>
               <div className="flex items-start gap-2.5">
                 <span className="w-5 h-5 rounded-full bg-[#2c3691] text-white flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">1</span>
-                <span>Verification check of your business location & contact info within Kozhikode.</span>
+                <span>Verification check of your business location & contact info within Calicut.</span>
               </div>
               <div className="flex items-start gap-2.5">
                 <span className="w-5 h-5 rounded-full bg-[#2c3691] text-white flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">2</span>
@@ -481,7 +481,7 @@ export const RegistrationForm: React.FC<RegistrationFormProps> = ({
 
                 <div>
                   <label htmlFor="businessLocation" className="block text-xs font-medium text-[#475467] mb-1.5">
-                    Area in Kozhikode <span className="text-[11px] text-[#98a2b3]">(Optional)</span>
+                    Area in Calicut <span className="text-[11px] text-[#98a2b3]">(Optional)</span>
                   </label>
                   <div className="flex items-center rounded-xl border border-[#d0d5dd] bg-white transition-all focus-within:border-[#2c3691] focus-within:ring-4 focus-within:ring-[#2c3691]/10 relative">
                     <div className="pl-3.5 pr-2.5 text-[#98a2b3] shrink-0 pointer-events-none flex items-center">
@@ -495,8 +495,8 @@ export const RegistrationForm: React.FC<RegistrationFormProps> = ({
                       className="w-full bg-transparent py-3 pr-10 text-sm text-[#101828] appearance-none focus:outline-none cursor-pointer"
                       disabled={isSubmitting}
                     >
-                      <option value="">Select Kozhikode Area...</option>
-                      {KOZHIKODE_LOCATIONS.map((loc) => (
+                      <option value="">Select Calicut Area...</option>
+                      {CALICUT_LOCATIONS.map((loc) => (
                         <option key={loc} value={loc}>
                           {loc}
                         </option>

@@ -44,7 +44,7 @@ interface Landmark {
 const LANDMARKS: Landmark[] = [
   {
     id: 'beach',
-    name: 'Kozhikode Beach',
+    name: 'Calicut Beach',
     shortTabName: 'Beach',
     malayalamName: 'കോഴിക്കോട് ബീച്ച്',
     tag: 'Tourism & Sunset Hub',
@@ -91,7 +91,7 @@ const LANDMARKS: Landmark[] = [
     trendingSearch: 'Creative Agencies, Web Developers & Tax Consultants',
     searchesCount: '410+ local businesses searched today',
     spotlightBusiness: {
-      name: 'Kozhikode Tech Ventures',
+      name: 'Calicut Tech Ventures',
       category: 'IT & Consulting',
       rating: '4.8',
       reviews: '310+',
@@ -171,7 +171,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#ec2028]" />
                 </span>
                 <span className="text-[11px] sm:text-[12px] font-bold uppercase tracking-wider text-[#131b3b]">
-                  LIVECALICUT &bull; KOZHIKODE LOCAL DIRECTORY
+                  LIVECALICUT &bull; CALICUT LOCAL DIRECTORY
                 </span>
               </div>
 
@@ -195,7 +195,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
             {/* Supporting Text */}
             <p className="text-base sm:text-lg text-[#475467] leading-relaxed max-w-xl font-normal">
               കോഴിക്കോട്ടുകാർ നിങ്ങളുടെ അടുത്തുള്ള കടകളും സർവീസുകളും തിരയുമ്പോൾ, ഏറ്റവും മുന്നിൽ നിങ്ങൾ ഉണ്ടാവട്ടെ.{' '}
-              <strong className="text-[#131b3b] font-semibold">Kozhikode-ന്റെ local ecosystem-ന്റെ</strong> ഭാഗമായി കസ്റ്റമേഴ്സിനെ നേരിട്ട് നേടൂ.
+              <strong className="text-[#131b3b] font-semibold">Calicut-ന്റെ local ecosystem-ന്റെ</strong> ഭാഗമായി കസ്റ്റമേഴ്സിനെ നേരിട്ട് നേടൂ.
             </p>
 
             {/* Interactive Category Quick Pills */}
@@ -266,13 +266,13 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
                 <ShieldCheck className="w-4 h-4 text-[#2c3691]" />
               </div>
               <span className="leading-relaxed">
-                <strong className="text-[#131b3b] font-semibold">100% Verified Calicut Review:</strong> Every listing is checked by our local Kozhikode team &bull; Zero spam &bull; Direct local customer trust.
+                <strong className="text-[#131b3b] font-semibold">100% Verified Calicut Review:</strong> Every listing is checked by our local Calicut team &bull; Zero spam &bull; Direct local customer trust.
               </span>
             </div>
           </div>
 
           {/* =========================================================
-              RIGHT COLUMN: Interactive "Kozhikode Local Discovery" Console
+              RIGHT COLUMN: Interactive "Calicut Local Discovery" Console
              ========================================================= */}
           <div
             className="lg:col-span-5 relative pt-4 sm:pt-5"
@@ -290,7 +290,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
                     <div className="flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-[#12b76a] animate-pulse" />
                       <span className="text-[11px] uppercase tracking-wider font-bold text-white/90">
-                        KOZHIKODE HUBS SPOTLIGHT
+                        CALICUT HUBS SPOTLIGHT
                       </span>
                     </div>
                     <span className="text-[10px] text-white/60 font-medium">
@@ -327,7 +327,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
                   <Image
                     key={currentLandmark.id}
                     src={currentLandmark.image}
-                    alt={`${currentLandmark.name} - Kozhikode commercial hub`}
+                    alt={`${currentLandmark.name} - Calicut commercial hub`}
                     fill
                     sizes="(max-width: 768px) 100vw, 40vw"
                     priority

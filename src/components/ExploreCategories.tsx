@@ -72,7 +72,7 @@ const CATEGORIES = [
   {
     id: 'events',
     title: 'Events & Community',
-    desc: 'Kozhikode literary festivals, sports leagues, exhibitions, and meets.',
+    desc: 'Calicut literary festivals, sports leagues, exhibitions, and meets.',
     icon: Calendar,
     tag: 'Community',
   },
@@ -100,7 +100,7 @@ export const ExploreCategories: React.FC<ExploreCategoriesProps> = ({ onCategory
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-3 mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f4f6fa] border border-[#e4e7ec] text-xs font-bold uppercase tracking-wider text-[#2c3691]">
-            Kozhikode Directory
+            Calicut Directory
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#131b3b] tracking-tight">
             Explore Local Categories

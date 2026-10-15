@@ -6,7 +6,7 @@ export const ValueStrip: React.FC = () => {
     {
       icon: Store,
       title: 'Discover Local Businesses',
-      desc: 'Shops, dining & commerce across Kozhikode',
+      desc: 'Shops, dining & commerce across Calicut',
     },
     {
       icon: Wrench,
@@ -15,7 +15,7 @@ export const ValueStrip: React.FC = () => {
     },
     {
       icon: Compass,
-      title: 'Explore Kozhikode',
+      title: 'Explore Calicut',
       desc: 'Food, culture, stays & city highlights',
     },
     {

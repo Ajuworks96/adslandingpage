@@ -21,7 +21,7 @@ const SECTORS = [
   {
     icon: Store,
     title: 'Retail Shops & Local Stores',
-    description: 'Textile showrooms, supermarkets, footwear, electronics, and neighborhood retail outlets across Kozhikode.',
+    description: 'Textile showrooms, supermarkets, footwear, electronics, and neighborhood retail outlets across Calicut.',
   },
   {
     icon: Utensils,
@@ -56,7 +56,7 @@ const SECTORS = [
   {
     icon: Briefcase,
     title: 'Other Legitimate Businesses',
-    description: 'Any genuine enterprise or emerging startup serving customers or clients within Kozhikode.',
+    description: 'Any genuine enterprise or emerging startup serving customers or clients within Calicut.',
   },
 ];
 
@@ -71,7 +71,7 @@ export const WhoCanRegister: React.FC<WhoCanRegisterProps> = ({ onRegisterClick 
             Inclusive Business Community
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#131b3b] tracking-tight">
-            Made for Kozhikode&apos;s Local Business Community.
+            Made for Calicut&apos;s Local Business Community.
           </h2>
           <p className="text-base text-[#475467] leading-relaxed">
             Whether you run a 3-generation shop on SM Street or operate a modern IT consultancy at Cyberpark, you belong here.

@@ -26,7 +26,7 @@ export const FaqSection: React.FC = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-base text-[#475467] leading-relaxed">
-            Straightforward, transparent answers about registering your Kozhikode business.
+            Straightforward, transparent answers about registering your Calicut business.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export const FaqSection: React.FC = () => {
         <div className="mt-10 p-5 sm:p-6 rounded-2xl bg-[#f8fafc] border border-[#e2e8f0] flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
           <div>
             <h4 className="text-sm font-bold text-[#131b3b]">Have a specific question not covered here?</h4>
-            <p className="text-xs text-[#64748b] mt-0.5">Our local Kozhikode team is available via direct phone or WhatsApp.</p>
+            <p className="text-xs text-[#64748b] mt-0.5">Our local Calicut team is available via direct phone or WhatsApp.</p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5 shrink-0">
             <a

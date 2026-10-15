@@ -58,7 +58,7 @@ Referrer:          ${lead.utmParams?.referrer || 'none'}
 
 Consent Verified:  Agreed to LiveCalicut registration & Privacy Policy terms
 -------------------------------------------
-LiveCalicut Hyperlocal Discovery Platform — Kozhikode, Kerala
+LiveCalicut Hyperlocal Discovery Platform — Calicut, Kerala
 `.trim();
 
   const html = `
@@ -88,7 +88,7 @@ LiveCalicut Hyperlocal Discovery Platform — Kozhikode, Kerala
   <div class="card">
     <div class="header">
       <div class="logo-title">LIVECALICUT</div>
-      <div class="logo-sub">Kozhikode's Local Discovery Platform</div>
+      <div class="logo-sub">Calicut's Local Discovery Platform</div>
       <div class="badge">Reference ID: ${lead.id}</div>
     </div>
     
@@ -116,7 +116,7 @@ LiveCalicut Hyperlocal Discovery Platform — Kozhikode, Kerala
           <td class="value">${lead.email || '<span style="color:#94a3b8; font-weight:400;">Not provided</span>'}</td>
         </tr>
         <tr>
-          <td class="label">Kozhikode Area</td>
+          <td class="label">Calicut Area</td>
           <td class="value">${lead.businessLocation || '<span style="color:#94a3b8; font-weight:400;">Not specified</span>'}</td>
         </tr>
         <tr>
@@ -144,7 +144,7 @@ LiveCalicut Hyperlocal Discovery Platform — Kozhikode, Kerala
     </div>
 
     <div class="footer">
-      LiveCalicut Lead Delivery System &bull; Kozhikode (Calicut), Kerala, India<br>
+      LiveCalicut Lead Delivery System &bull; Calicut, Kerala, India<br>
       Automated notification for administrative review.
     </div>
   </div>

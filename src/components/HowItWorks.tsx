@@ -8,7 +8,7 @@ export const HowItWorks: React.FC = () => {
     {
       step: '01',
       title: 'Submit Your Details',
-      desc: 'Complete the short registration form below with your contact details, business name, category, and Kozhikode area.',
+      desc: 'Complete the short registration form below with your contact details, business name, category, and Calicut area.',
       icon: ClipboardCheck,
     },
     {
@@ -79,7 +79,7 @@ export const HowItWorks: React.FC = () => {
         <div className="mt-12 max-w-2xl mx-auto p-4 sm:p-5 rounded-xl bg-[#f8fafc] border border-[#e2e8f0] flex items-start gap-3.5 text-xs text-[#475467]">
           <ShieldAlert className="w-5 h-5 text-[#2c3691] shrink-0 mt-0.5" />
           <p className="leading-relaxed">
-            <strong className="text-[#131b3b]">Important note on review & verification:</strong> Submitting this registration form does not constitute an automatic guarantee of publication. Every listing is reviewed by the LiveCalicut team to verify legitimate operation within Kozhikode and protect community trust.
+            <strong className="text-[#131b3b]">Important note on review & verification:</strong> Submitting this registration form does not constitute an automatic guarantee of publication. Every listing is reviewed by the LiveCalicut team to verify legitimate operation within Calicut and protect community trust.
           </p>
         </div>
 

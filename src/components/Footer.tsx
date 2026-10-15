@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { MapPin, Heart, Phone, ExternalLink } from 'lucide-react';
-import { KOZHIKODE_LOCATIONS, LIVECALICUT_WHATSAPP, LIVECALICUT_PHONE, LIVECALICUT_ADDRESS } from '@/lib/constants';
+import { CALICUT_LOCATIONS, LIVECALICUT_WHATSAPP, LIVECALICUT_PHONE, LIVECALICUT_ADDRESS } from '@/lib/constants';
 import { WhatsAppIcon } from './WhatsAppIcon';
 
 interface FooterProps {
@@ -41,7 +41,7 @@ export const Footer: React.FC<FooterProps> = ({
               />
             </div>
             <p className="text-xs text-[#475467] leading-relaxed max-w-sm">
-              LiveCalicut brings the local ecosystem together, connecting people, businesses, services, and opportunities across Kozhikode, Kerala.
+              LiveCalicut brings the local ecosystem together, connecting people, businesses, services, and opportunities across Calicut, Kerala.
             </p>
             <div className="pt-1">
               <p className="text-[11px] text-[#98a2b3]">
@@ -153,14 +153,14 @@ export const Footer: React.FC<FooterProps> = ({
             </ul>
           </div>
 
-          {/* Kozhikode Spatial Hubs */}
+          {/* Calicut Spatial Hubs */}
           <div className="md:col-span-8 lg:col-span-3 space-y-3">
             <h4 className="text-[11px] font-bold uppercase tracking-wider text-[#131b3b] flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-[#ec2028]" />
-              <span>Kozhikode City Hubs</span>
+              <span>Calicut City Hubs</span>
             </h4>
             <div className="flex flex-wrap gap-1.5 pt-1">
-              {KOZHIKODE_LOCATIONS.slice(0, 10).map((loc) => (
+              {CALICUT_LOCATIONS.slice(0, 10).map((loc) => (
                 <span
                   key={loc}
                   className="px-2.5 py-1 rounded-md bg-white border border-[#e4e7ec] text-[11px] text-[#475467]"
@@ -195,7 +195,7 @@ export const Footer: React.FC<FooterProps> = ({
           </div>
 
           <div className="flex items-center gap-1.5 text-[#475467]">
-            <span>Crafted for Kozhikode</span>
+            <span>Crafted for Calicut</span>
             <Heart className="w-3.5 h-3.5 text-[#ec2028] fill-[#ec2028]" />
           </div>
         </div>

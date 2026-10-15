@@ -24,7 +24,7 @@ export const CommunitySection: React.FC = () => {
             </h2>
 
             <p className="text-base text-[#475467] leading-relaxed">
-              Kozhikode has always been celebrated for its warmth, hospitality, and vibrant merchant spirit. LiveCalicut is built to translate that real-world community into an evolving digital ecosystem.
+              Calicut has always been celebrated for its warmth, hospitality, and vibrant merchant spirit. LiveCalicut is built to translate that real-world community into an evolving digital ecosystem.
             </p>
 
             <div className="space-y-4 pt-2">
@@ -54,7 +54,7 @@ export const CommunitySection: React.FC = () => {
             </div>
 
             <div className="p-4 rounded-xl bg-white border border-[#e4e7ec] text-xs text-[#667085] leading-relaxed">
-              <strong className="text-[#131b3b]">Our ongoing commitment:</strong> We are continuously refining platform modules alongside Kozhikode&apos;s business owners to ensure every feature delivers genuine local utility.
+              <strong className="text-[#131b3b]">Our ongoing commitment:</strong> We are continuously refining platform modules alongside Calicut&apos;s business owners to ensure every feature delivers genuine local utility.
             </div>
           </div>
 
@@ -64,14 +64,14 @@ export const CommunitySection: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-md aspect-[3/4]">
                 <Image
                   src="/heroes/coastal-life.jpg"
-                  alt="Kozhikode coastal culture and life"
+                  alt="Calicut coastal culture and life"
                   fill
                   sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#131b3b]/70 via-transparent to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3 text-white">
-                  <p className="text-[11px] font-bold">Kozhikode Beach</p>
+                  <p className="text-[11px] font-bold">Calicut Beach</p>
                   <p className="text-[10px] text-slate-300">Heart of the coastline</p>
                 </div>
               </div>
@@ -98,7 +98,7 @@ export const CommunitySection: React.FC = () => {
                     <span>Malabar Focus</span>
                   </div>
                   <p className="text-[11px] text-[#667085] leading-tight">
-                    Dedicated specifically to Kozhikode district and its surrounding community.
+                    Dedicated specifically to Calicut district and its surrounding community.
                   </p>
                 </div>
               </div>

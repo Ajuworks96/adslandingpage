@@ -28,7 +28,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onRegisterClick }) => {
             />
           </div>
           <span className="hidden sm:inline-block text-[10px] uppercase font-bold tracking-widest text-[#2c3691] border-l border-[#d0d5dd] pl-3">
-            Kozhikode Discovery
+            Calicut Discovery
           </span>
         </a>
 

@@ -9,13 +9,13 @@ export const BUSINESS_CATEGORIES = [
   { id: 'events', label: 'Events & Community', description: 'Cultural fests, exhibitions, sports & local gatherings' },
   { id: 'services', label: 'Local Services', description: 'Home repairs, legal, accounting, auto & professional help' },
   { id: 'products', label: 'Products & Buy/Sell', description: 'Pre-owned goods, crafts, trade & local marketplace' },
-  { id: 'other', label: 'Other Business / Service', description: 'Other specialized businesses in Kozhikode' },
+  { id: 'other', label: 'Other Business / Service', description: 'Other specialized businesses in Calicut' },
 ] as const;
 
-export const KOZHIKODE_LOCATIONS = [
+export const CALICUT_LOCATIONS = [
   'SM Street (Mittai Theruvu)',
   'Mavoor Road',
-  'Kozhikode Beach',
+  'Calicut Beach',
   'Calicut Cyberpark / Kinfra',
   'Palayam',
   'Hilite City / Thondayad',
@@ -30,13 +30,13 @@ export const KOZHIKODE_LOCATIONS = [
   'Ramanattukara',
   'Vatakara',
   'Koyilandy',
-  'Other Area in Kozhikode',
+  'Other Area in Calicut',
 ] as const;
 
 export const WHO_CAN_REGISTER = [
   {
     title: 'Retail Shops & Local Stores',
-    description: 'Footwear, textiles, electronics, supermarkets, and neighborhood stores across Kozhikode.',
+    description: 'Footwear, textiles, electronics, supermarkets, and neighborhood stores across Calicut.',
     icon: 'Store',
   },
   {
@@ -71,7 +71,7 @@ export const WHO_CAN_REGISTER = [
   },
   {
     title: 'Other Local Businesses & Services',
-    description: 'Any legitimate local business or emerging venture operating in and serving Kozhikode.',
+    description: 'Any legitimate local business or emerging venture operating in and serving Calicut.',
     icon: 'Briefcase',
   },
 ] as const;
@@ -101,7 +101,7 @@ export const FAQS = [
   },
   {
     question: 'Who can register?',
-    answer: 'Any legitimate business, service provider, professional, or local merchant operating in or serving Kozhikode (Calicut) can submit their registration for review.',
+    answer: 'Any legitimate business, service provider, professional, or local merchant operating in or serving Calicut can submit their registration for review.',
   },
   {
     question: 'What happens after I submit the form?',
@@ -145,9 +145,9 @@ export const LIVECALICUT_PHONE = {
 
 export const LIVECALICUT_ADDRESS = {
   line1: 'M-7 63/345, Begum Complex',
-  line2: 'UKS Road, Calicut, Kozhikode',
+  line2: 'UKS Road, Calicut',
   stateAndPin: 'Kerala, 673001, India',
-  full: 'M-7 63/345, Begum Complex, UKS Road, Calicut, Kozhikode, Kerala, 673001, India',
-  googleMapsUrl: 'https://maps.google.com/?q=Begum+Complex+UKS+Road+Calicut+Kozhikode+Kerala+673001',
+  full: 'M-7 63/345, Begum Complex, UKS Road, Calicut, Kerala, 673001, India',
+  googleMapsUrl: 'https://maps.google.com/?q=Begum+Complex+UKS+Road+Calicut+Kerala+673001',
 };
 

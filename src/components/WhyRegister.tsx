@@ -21,7 +21,7 @@ export const WhyRegister: React.FC<WhyRegisterProps> = ({ onRegisterClick }) => 
             Your Business Deserves to Be Discovered.
           </h2>
           <p className="text-base sm:text-lg text-[#475467] leading-relaxed">
-            We focus on honest, practical utility for Kozhikode businesses. We don&apos;t make exaggerated promises or fake guarantees — here is exactly what LiveCalicut offers:
+            We focus on honest, practical utility for Calicut businesses. We don&apos;t make exaggerated promises or fake guarantees — here is exactly what LiveCalicut offers:
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export const WhyRegister: React.FC<WhyRegisterProps> = ({ onRegisterClick }) => 
               </div>
 
               <p className="text-slate-300 text-sm leading-relaxed">
-                Give people another reliable avenue to discover your business. When citizens and travelers explore Kozhikode by neighborhood, category, or service, your presence is there for them to find.
+                Give people another reliable avenue to discover your business. When citizens and travelers explore Calicut by neighborhood, category, or service, your presence is there for them to find.
               </p>
             </div>
 
@@ -95,7 +95,7 @@ export const WhyRegister: React.FC<WhyRegisterProps> = ({ onRegisterClick }) => 
                   <h4 className="text-base font-bold text-[#131b3b]">Targeted Local Reach</h4>
                 </div>
                 <p className="text-xs sm:text-sm text-[#475467] leading-relaxed">
-                  Build awareness specifically among people who are living in, working in, or traveling through Kozhikode — ensuring your visibility is hyper-relevant to your actual service area.
+                  Build awareness specifically among people who are living in, working in, or traveling through Calicut — ensuring your visibility is hyper-relevant to your actual service area.
                 </p>
               </div>
             </div>

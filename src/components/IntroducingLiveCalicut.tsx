@@ -21,7 +21,7 @@ export const IntroducingLiveCalicut: React.FC<IntroducingLiveCalicutProps> = ({ 
               <div className="relative aspect-[4/5] w-full">
                 <Image
                   src="/heroes/sm-street.jpg"
-                  alt="Kozhikode vibrant city market and commerce"
+                  alt="Calicut vibrant city market and commerce"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"
@@ -32,7 +32,7 @@ export const IntroducingLiveCalicut: React.FC<IntroducingLiveCalicutProps> = ({ 
                 <div className="absolute bottom-6 left-6 right-6 text-white space-y-3">
                   <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-white/20 backdrop-blur-md text-[11px] font-bold uppercase tracking-wider">
                     <span className="w-2 h-2 rounded-full bg-[#ec2028]" />
-                    <span>The Kozhikode Spirit</span>
+                    <span>The Calicut Spirit</span>
                   </div>
                   <h3 className="text-xl font-bold leading-tight">
                     Where tradition meets modern commerce.
@@ -57,7 +57,7 @@ export const IntroducingLiveCalicut: React.FC<IntroducingLiveCalicutProps> = ({ 
             </h2>
 
             <p className="text-base sm:text-lg text-[#475467] leading-relaxed">
-              LiveCalicut is created with a singular focus: to bridge the gap between people, local businesses, and opportunities across Kozhikode.
+              LiveCalicut is created with a singular focus: to bridge the gap between people, local businesses, and opportunities across Calicut.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-2">
@@ -65,7 +65,7 @@ export const IntroducingLiveCalicut: React.FC<IntroducingLiveCalicutProps> = ({ 
                 <div className="w-8 h-8 rounded-lg bg-[#eff6ff] flex items-center justify-center text-[#2c3691]">
                   <Globe className="w-4 h-4" />
                 </div>
-                <h4 className="text-sm font-bold text-[#131b3b]">Connecting Kozhikode</h4>
+                <h4 className="text-sm font-bold text-[#131b3b]">Connecting Calicut</h4>
                 <p className="text-xs text-[#667085] leading-relaxed">
                   Helping residents and visitors quickly uncover businesses, services, dining, and healthcare nearby.
                 </p>
@@ -77,7 +77,7 @@ export const IntroducingLiveCalicut: React.FC<IntroducingLiveCalicutProps> = ({ 
                 </div>
                 <h4 className="text-sm font-bold text-[#131b3b]">Organized Local Hubs</h4>
                 <p className="text-xs text-[#667085] leading-relaxed">
-                  Tailored structure highlighting specific Kozhikode locations from Palayam and Beach to Cyberpark and Thondayad.
+                  Tailored structure highlighting specific Calicut locations from Palayam and Beach to Cyberpark and Thondayad.
                 </p>
               </div>
             </div>

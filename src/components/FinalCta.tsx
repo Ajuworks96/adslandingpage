@@ -19,11 +19,11 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ onRegisterClick }) => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-bold uppercase tracking-wider text-[#93c5fd]">
           <span className="w-2 h-2 rounded-full bg-[#ec2028]" />
-          <span>Join Kozhikode&apos;s Local Platform</span>
+          <span>Join Calicut&apos;s Local Platform</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-          Let&apos;s Build a More Connected Kozhikode.
+          Let&apos;s Build a More Connected Calicut.
         </h2>
 
         <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">

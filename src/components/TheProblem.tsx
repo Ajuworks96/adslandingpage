@@ -20,7 +20,7 @@ export const TheProblem: React.FC<TheProblemProps> = ({ onRegisterClick }) => {
             എളുപ്പത്തിൽ കണ്ടെത്താനാകുന്നുണ്ടോ?
           </h2>
           <p className="text-base sm:text-lg text-[#475467] leading-relaxed">
-            Kozhikode-ൽ ഒരു മികച്ച സേവനമോ കടയോ ഭക്ഷണശാലയോ ആവശ്യമുള്ളപ്പോൾ, ആളുകൾ ഒന്നിലധികം ആപ്പുകളിലും സോഷ്യൽ മീഡിയകളിലും പരതി വലയുകയാണ് പതിവ്.
+            Calicut-ൽ ഒരു മികച്ച സേവനമോ കടയോ ഭക്ഷണശാലയോ ആവശ്യമുള്ളപ്പോൾ, ആളുകൾ ഒന്നിലധികം ആപ്പുകളിലും സോഷ്യൽ മീഡിയകളിലും പരതി വലയുകയാണ് പതിവ്.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export const TheProblem: React.FC<TheProblemProps> = ({ onRegisterClick }) => {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[#dc2626] font-bold mt-0.5 shrink-0">&times;</span>
-                <span><strong>Wasted Advertising Budgets:</strong> Spending on general ads that reach people outside Kozhikode instead of local shoppers.</span>
+                <span><strong>Wasted Advertising Budgets:</strong> Spending on general ads that reach people outside Calicut instead of local shoppers.</span>
               </li>
             </ul>
           </div>
@@ -68,7 +68,7 @@ export const TheProblem: React.FC<TheProblemProps> = ({ onRegisterClick }) => {
             <div className="flex items-center justify-between pb-6 border-b border-[#f2f4f7]">
               <div>
                 <span className="text-[11px] uppercase tracking-wider font-bold text-[#2c3691]">LiveCalicut Approach</span>
-                <h3 className="text-xl font-bold text-[#131b3b] mt-0.5">A Connected Kozhikode Ecosystem</h3>
+                <h3 className="text-xl font-bold text-[#131b3b] mt-0.5">A Connected Calicut Ecosystem</h3>
               </div>
               <div className="w-10 h-10 rounded-full bg-[#eff6ff] flex items-center justify-center text-[#2c3691]">
                 <CheckCircle2 className="w-5 h-5" />
@@ -78,7 +78,7 @@ export const TheProblem: React.FC<TheProblemProps> = ({ onRegisterClick }) => {
             <ul className="mt-6 space-y-4 text-sm text-[#344054]">
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-4 h-4 text-[#12b76a] mt-0.5 shrink-0" />
-                <span><strong>One Dedicated City Platform:</strong> Bringing Kozhikode businesses, services, and opportunities together in one intuitive space.</span>
+                <span><strong>One Dedicated City Platform:</strong> Bringing Calicut businesses, services, and opportunities together in one intuitive space.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-4 h-4 text-[#12b76a] mt-0.5 shrink-0" />
@@ -90,7 +90,7 @@ export const TheProblem: React.FC<TheProblemProps> = ({ onRegisterClick }) => {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-4 h-4 text-[#12b76a] mt-0.5 shrink-0" />
-                <span><strong>Simple & Transparent:</strong> Free registration to start, reviewed by a team that actually understands Kozhikode.</span>
+                <span><strong>Simple & Transparent:</strong> Free registration to start, reviewed by a team that actually understands Calicut.</span>
               </li>
             </ul>
 

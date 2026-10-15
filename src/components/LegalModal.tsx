@@ -37,7 +37,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, type, onClose })
                 {type === 'privacy' ? 'Privacy Policy' : 'Terms & Conditions'}
               </h3>
               <p className="text-[11px] text-[#667085]">
-                LiveCalicut &bull; Kozhikode Local Discovery Ecosystem
+                LiveCalicut &bull; Calicut Local Discovery Ecosystem
               </p>
             </div>
           </div>
@@ -59,14 +59,14 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, type, onClose })
               <section className="space-y-1.5">
                 <h4 className="font-bold text-[#131b3b] text-sm">1. Information We Collect</h4>
                 <p>
-                  When you submit a business registration on LiveCalicut, we collect your Full Name, Mobile Number, Business Name, Business Category, and optional details (Email Address, Area in Kozhikode, and Website or Social Media URL). We also capture campaign attribution parameters to understand where you found us.
+                  When you submit a business registration on LiveCalicut, we collect your Full Name, Mobile Number, Business Name, Business Category, and optional details (Email Address, Area in Calicut, and Website or Social Media URL). We also capture campaign attribution parameters to understand where you found us.
                 </p>
               </section>
 
               <section className="space-y-1.5">
                 <h4 className="font-bold text-[#131b3b] text-sm">2. Purpose & Use of Data</h4>
                 <p>
-                  Your details are utilized strictly to evaluate your listing submission, verify authentic operation within Kozhikode, and contact you via phone or WhatsApp regarding the onboarding process. We do not sell or lease your personal information to third-party ad brokers or unauthorized entities.
+                  Your details are utilized strictly to evaluate your listing submission, verify authentic operation within Calicut, and contact you via phone or WhatsApp regarding the onboarding process. We do not sell or lease your personal information to third-party ad brokers or unauthorized entities.
                 </p>
               </section>
 
@@ -80,7 +80,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, type, onClose })
               <section className="space-y-1.5">
                 <h4 className="font-bold text-[#131b3b] text-sm">4. Data Access, Rights & Contact</h4>
                 <p>
-                  You retain the right to inquire about your submitted listing, request modifications, or withdraw your business details. You can contact our team at our registered office: <strong>M-7 63/345, Begum Complex, UKS Road, Calicut, Kozhikode, Kerala, 673001, India</strong>, by phone at <strong>0495 2928095</strong>, or via WhatsApp at <strong>+91 95399 80990</strong>.
+                  You retain the right to inquire about your submitted listing, request modifications, or withdraw your business details. You can contact our team at our registered office: <strong>M-7 63/345, Begum Complex, UKS Road, Calicut, Kerala, 673001, India</strong>, by phone at <strong>0495 2928095</strong>, or via WhatsApp at <strong>+91 95399 80990</strong>.
                 </p>
               </section>
             </>
@@ -96,7 +96,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, type, onClose })
               <section className="space-y-1.5">
                 <h4 className="font-bold text-[#131b3b] text-sm">2. Business Verification & Accuracy</h4>
                 <p>
-                  Applicants are responsible for providing truthful, accurate information regarding their business, licensing, location in Kozhikode, and contact numbers. Fraudulent, misleading, or deceptive submissions will be declined or removed.
+                  Applicants are responsible for providing truthful, accurate information regarding their business, licensing, location in Calicut, and contact numbers. Fraudulent, misleading, or deceptive submissions will be declined or removed.
                 </p>
               </section>
 
@@ -110,7 +110,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, type, onClose })
               <section className="space-y-1.5">
                 <h4 className="font-bold text-[#131b3b] text-sm">4. Platform Governance</h4>
                 <p>
-                  LiveCalicut reserves the right to decline or remove any listing that fails to meet quality, verification, or community safety standards across Kozhikode.
+                  LiveCalicut reserves the right to decline or remove any listing that fails to meet quality, verification, or community safety standards across Calicut.
                 </p>
               </section>
             </>

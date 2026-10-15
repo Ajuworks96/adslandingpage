@@ -12,13 +12,13 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "List Your Business on LiveCalicut | Free Registration",
   description:
-    "Register your business with LiveCalicut and help more people discover local businesses and services across Kozhikode, Kerala.",
+    "Register your business with LiveCalicut and help more people discover local businesses and services across Calicut, Kerala.",
   keywords: [
     "LiveCalicut",
     "Calicut business listing",
-    "Kozhikode local discovery",
+    "Calicut local discovery",
     "Calicut business directory",
-    "Kozhikode shops",
+    "Calicut shops",
     "Kerala local businesses",
     "SM Street",
     "Calicut Cyberpark",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "List Your Business on LiveCalicut | Free Registration",
     description:
-      "Register your business with LiveCalicut and help more people discover local businesses and services across Kozhikode, Kerala.",
+      "Register your business with LiveCalicut and help more people discover local businesses and services across Calicut, Kerala.",
     url: "https://livecalicut.com",
     siteName: "LiveCalicut",
     locale: "en_IN",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         url: "/heroes/calicut-hero.jpg",
         width: 1200,
         height: 630,
-        alt: "LiveCalicut — Kozhikode Local Discovery Platform",
+        alt: "LiveCalicut — Calicut Local Discovery Platform",
       },
     ],
   },
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "List Your Business on LiveCalicut | Free Registration",
     description:
-      "Register your business with LiveCalicut and help more people discover local businesses and services across Kozhikode, Kerala.",
+      "Register your business with LiveCalicut and help more people discover local businesses and services across Calicut, Kerala.",
     images: ["/heroes/calicut-hero.jpg"],
   },
   icons: {

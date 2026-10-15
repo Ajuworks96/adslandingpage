@@ -15,7 +15,7 @@ import {
   ArrowRight,
   RotateCcw,
 } from 'lucide-react';
-import { BUSINESS_CATEGORIES, KOZHIKODE_LOCATIONS, LIVECALICUT_WHATSAPP, LIVECALICUT_PHONE } from '@/lib/constants';
+import { BUSINESS_CATEGORIES, CALICUT_LOCATIONS, LIVECALICUT_WHATSAPP, LIVECALICUT_PHONE } from '@/lib/constants';
 import { RegistrationFormData, ApiResponse } from '@/lib/types';
 import { Confetti } from './Confetti';
 import { WhatsAppIcon } from './WhatsAppIcon';
@@ -293,7 +293,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
               List Your Business on LiveCalicut
             </h2>
             <p className="text-xs text-slate-300 font-normal leading-relaxed">
-              Connect directly with Kozhikode citizens. Free verification by our team.
+              Connect directly with Calicut citizens. Free verification by our team.
             </p>
           </div>
         </div>
@@ -322,7 +322,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
                 <p className="font-bold text-[#131b3b] uppercase tracking-wide">Next steps:</p>
                 <div className="flex items-center gap-2">
                   <span className="w-4 h-4 rounded-full bg-[#2c3691] text-white flex items-center justify-center text-[9px] font-bold">1</span>
-                  <span>Team verifies business operating address in Kozhikode.</span>
+                  <span>Team verifies business operating address in Calicut.</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-4 h-4 rounded-full bg-[#2c3691] text-white flex items-center justify-center text-[9px] font-bold">2</span>
@@ -539,10 +539,10 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
                 </div>
               </div>
 
-              {/* Area in Kozhikode */}
+              {/* Area in Calicut */}
               <div>
                 <label htmlFor="modal-businessLocation" className="block text-xs font-medium text-[#475467] mb-1.5">
-                  Area / Ward in Kozhikode <span className="text-[11px] text-[#98a2b3]">(Optional)</span>
+                  Area / Ward in Calicut <span className="text-[11px] text-[#98a2b3]">(Optional)</span>
                 </label>
                 <div className="flex items-center rounded-xl border border-[#d0d5dd] bg-white transition-all focus-within:border-[#2c3691] focus-within:ring-4 focus-within:ring-[#2c3691]/10 relative">
                   <div className="pl-3.5 pr-2.5 text-[#98a2b3] shrink-0 pointer-events-none flex items-center">
@@ -556,8 +556,8 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
                     className="w-full bg-transparent py-2.5 sm:py-3 pr-10 text-sm text-[#101828] appearance-none focus:outline-none cursor-pointer"
                     disabled={isSubmitting}
                   >
-                    <option value="">Select Kozhikode Hub...</option>
-                    {KOZHIKODE_LOCATIONS.map((loc) => (
+                    <option value="">Select Calicut Hub...</option>
+                    {CALICUT_LOCATIONS.map((loc) => (
                       <option key={loc} value={loc}>
                         {loc}
                       </option>
