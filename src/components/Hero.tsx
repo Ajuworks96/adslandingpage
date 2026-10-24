@@ -189,70 +189,88 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
           {/* =========================================================
-              LEFT COLUMN: Editorial Typography, Live Ticker & Action
+              LEFT COLUMN: Bilingual Tech-Startup Typography & Benefits
              ========================================================= */}
           <div className="lg:col-span-7 space-y-6 text-left">
             
-            {/* Live Indicator Badges */}
-            <div className="flex flex-wrap items-center gap-2.5">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#e4e7ec] shadow-xs">
-                <span className="relative flex h-2.5 w-2.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ec2028] opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#ec2028]" />
+            {/* Tech-Startup Badges */}
+            <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#2c3691]/5 border border-[#2c3691]/15 text-[#2c3691] text-xs font-semibold backdrop-blur-xs shadow-2xs">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#12b76a] opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#12b76a]" />
                 </span>
-                <span className="text-[11px] sm:text-[12px] font-bold uppercase tracking-wider text-[#131b3b]">
-                  LIVECALICUT &bull; CALICUT LOCAL DIRECTORY
+                <span className="uppercase tracking-wider font-bold text-[10.5px] sm:text-[11px]">
+                  CALICUT DIGITAL ECOSYSTEM
                 </span>
               </div>
 
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#fff1f2] border border-[#fecdca] text-[#ec2028] text-xs font-semibold">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#ec2028]/10 border border-[#ec2028]/20 text-[#ec2028] text-xs font-bold">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#ec2028]" />
-                <span>100% സൗജന്യ രജിസ്ട്രേഷൻ</span>
+                <span>100% Free Listing</span>
               </span>
             </div>
 
-            {/* Main Headline */}
-            <div className="space-y-2">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-black text-[#131b3b] tracking-tight leading-[1.24] sm:leading-[1.2]">
-                Google-ൽ തുടങ്ങുന്ന തിരച്ചിൽ.{' '}
-                <span className="block mt-1 sm:mt-1.5 text-transparent bg-clip-text bg-gradient-to-r from-[#ec2028] via-[#e11d48] to-[#2c3691]">
-                  LIVECALICUT-ൽ
-                </span>{' '}
-                നേരിട്ടെത്തുന്നു!
+            {/* Bilingual Main Headline */}
+            <div className="space-y-3.5">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold text-[#101828] tracking-tight leading-[1.16]">
+                Connect Every Customer in Calicut to Your{' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ec2028] via-[#e11d48] to-[#2c3691]">
+                  Business.
+                </span>
               </h1>
+
+              {/* Punchy Malayalam Sub-Hook Card */}
+              <div className="p-3.5 sm:p-4 rounded-2xl bg-gradient-to-r from-[#fafbfc] via-white to-[#fff5f5] border border-[#e4e7ec] shadow-2xs space-y-1.5">
+                <div className="flex items-center gap-2">
+                  <span className="px-2 py-0.5 rounded-md bg-[#ec2028] text-white text-[10px] font-bold uppercase tracking-wider shrink-0">
+                    Live Search
+                  </span>
+                  <p className="text-sm sm:text-base font-bold text-[#131b3b]">
+                    Google-ൽ തുടങ്ങുന്ന തിരച്ചിൽ, LIVECALICUT-ലൂടെ നേരിട്ട് നിങ്ങളിലേക്ക്!
+                  </p>
+                </div>
+                <p className="text-xs sm:text-sm text-[#475467] leading-relaxed">
+                  കോഴിക്കോട്ടുകാർ നിങ്ങളുടെ അടുത്തുള്ള കടകളും സർവീസുകളും തിരയുമ്പോൾ, ഏറ്റവും മുന്നിൽ നിങ്ങൾ ഉണ്ടാവട്ടെ. Direct WhatsApp & Call leads &bull; സീറോ കമ്മീഷൻ.
+                </p>
+              </div>
             </div>
 
-            {/* Supporting Text */}
-            <p className="text-base sm:text-lg text-[#475467] leading-relaxed max-w-xl font-normal">
-              കോഴിക്കോട്ടുകാർ നിങ്ങളുടെ അടുത്തുള്ള കടകളും സർവീസുകളും തിരയുമ്പോൾ, ഏറ്റവും മുന്നിൽ നിങ്ങൾ ഉണ്ടാവട്ടെ.{' '}
-              <strong className="text-[#131b3b] font-semibold">Calicut-ന്റെ Digital ecosystem-ന്റെ</strong> ഭാഗമായി കസ്റ്റമേഴ്സിനെ നേരിട്ട് നേടൂ.
-            </p>
-
             {/* Interactive Category Quick Pills */}
-            <div className="pt-1 space-y-2.5">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#667085]">
-                <TrendingUp className="w-3.5 h-3.5 text-[#2c3691]" />
-                <span>തിരയപ്പെടുന്ന പ്രധാന വിഭാഗങ്ങൾ (Click to select):</span>
+            <div className="space-y-2">
+              <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-[#667085]">
+                <div className="flex items-center gap-1.5">
+                  <TrendingUp className="w-3.5 h-3.5 text-[#2c3691]" />
+                  <span>Top Calicut Categories (Click to Select):</span>
+                </div>
+                <span className="text-[11px] text-[#2c3691] font-semibold hidden sm:inline">Instant Setup</span>
               </div>
 
               <div className="flex flex-wrap gap-2">
-                {HERO_CATEGORIES.map((cat) => (
-                  <button
-                    key={cat.id}
-                    type="button"
-                    onClick={() => handleSelectCategory(cat.id)}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white hover:bg-[#f4f6fa] border border-[#e4e7ec] hover:border-[#2c3691]/40 text-xs font-semibold text-[#344054] hover:text-[#2c3691] shadow-2xs transition-all duration-150 active:scale-95 cursor-pointer group"
-                  >
-                    <span>{cat.icon}</span>
-                    <span>{cat.label}</span>
-                    <ChevronRight className="w-3 h-3 text-[#98a2b3] group-hover:text-[#2c3691] transition-transform group-hover:translate-x-0.5" />
-                  </button>
-                ))}
+                {HERO_CATEGORIES.map((cat) => {
+                  const isSelected = formData.businessCategory === cat.id;
+                  return (
+                    <button
+                      key={cat.id}
+                      type="button"
+                      onClick={() => handleSelectCategory(cat.id)}
+                      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all duration-150 active:scale-95 cursor-pointer border ${
+                        isSelected
+                          ? 'bg-[#2c3691] text-white border-[#2c3691] shadow-xs'
+                          : 'bg-white hover:bg-[#f4f6fa] border-[#e4e7ec] hover:border-[#2c3691]/40 text-[#344054] hover:text-[#2c3691] shadow-2xs'
+                      }`}
+                    >
+                      <span>{cat.icon}</span>
+                      <span>{cat.label}</span>
+                      <ChevronRight className={`w-3 h-3 transition-transform ${isSelected ? 'text-white' : 'text-[#98a2b3]'}`} />
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
             {/* CTA Group */}
-            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4">
+            <div className="pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
               <button
                 onClick={() => {
                   const inputEl = document.getElementById('hero-business-name');
@@ -264,7 +282,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
                   }
                 }}
                 type="button"
-                className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-gradient-to-r from-[#ec2028] via-[#e11d48] to-[#cc141c] hover:opacity-95 text-white text-base font-bold shadow-lg shadow-[#ec2028]/25 hover:shadow-xl hover:shadow-[#ec2028]/35 transition-all duration-200 active:scale-[0.98] cursor-pointer group"
+                className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#ec2028] via-[#e11d48] to-[#cc141c] hover:opacity-95 text-white text-sm sm:text-base font-bold shadow-md shadow-[#ec2028]/25 hover:shadow-lg transition-all duration-200 active:scale-[0.98] cursor-pointer group"
               >
                 {/* Shimmer sweep effect */}
                 <span className="absolute inset-0 w-1/2 h-full bg-white/20 -skew-x-12 animate-shimmer pointer-events-none" />
@@ -275,36 +293,36 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
               <button
                 onClick={onExploreClick}
                 type="button"
-                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-white hover:bg-[#f8fafc] text-[#131b3b] text-base font-bold border border-[#d0d5dd] hover:border-[#2c3691] shadow-xs hover:shadow-sm transition-all duration-200 active:scale-[0.98] cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-white hover:bg-[#f8fafc] text-[#131b3b] text-sm sm:text-base font-bold border border-[#d0d5dd] hover:border-[#2c3691] shadow-xs hover:shadow-sm transition-all duration-200 active:scale-[0.98] cursor-pointer"
               >
                 <Compass className="w-4 h-4 text-[#2c3691]" />
                 <span>Explore Calicut Directory</span>
               </button>
             </div>
 
-            {/* Supporting Microcopy & Trust Proof */}
-            <div className="pt-1 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs sm:text-[13px] text-[#475467]">
-              <span className="flex items-center gap-1.5 font-medium">
-                <CheckCircle2 className="w-4 h-4 text-[#12b76a]" />
-                <span>Takes only 60 seconds</span>
-              </span>
-              <span className="flex items-center gap-1.5 font-medium">
-                <CheckCircle2 className="w-4 h-4 text-[#12b76a]" />
-                <span>Zero commission / 100% Free</span>
-              </span>
-              <span className="flex items-center gap-1.5 font-medium">
-                <CheckCircle2 className="w-4 h-4 text-[#12b76a]" />
-                <span>Direct WhatsApp & Call Leads</span>
-              </span>
+            {/* Tech-Startup Metric Strip */}
+            <div className="pt-2 grid grid-cols-3 gap-2.5 sm:gap-3 border-t border-[#f2f4f7] text-left">
+              <div className="p-2 sm:p-2.5 rounded-xl bg-[#fafbfc] border border-[#f0f2f5]">
+                <p className="text-base sm:text-lg font-black text-[#131b3b]">1,200+</p>
+                <p className="text-[10px] sm:text-[11px] text-[#667085] font-medium leading-tight">Calicut Merchants</p>
+              </div>
+              <div className="p-2 sm:p-2.5 rounded-xl bg-[#fafbfc] border border-[#f0f2f5]">
+                <p className="text-base sm:text-lg font-black text-[#ec2028]">50K+</p>
+                <p className="text-[10px] sm:text-[11px] text-[#667085] font-medium leading-tight">Monthly Searches</p>
+              </div>
+              <div className="p-2 sm:p-2.5 rounded-xl bg-[#fafbfc] border border-[#f0f2f5]">
+                <p className="text-base sm:text-lg font-black text-[#12b76a]">₹0</p>
+                <p className="text-[10px] sm:text-[11px] text-[#667085] font-medium leading-tight">Zero Commission</p>
+              </div>
             </div>
 
             {/* Authentic Trust Marker */}
-            <div className="pt-3 border-t border-[#f2f4f7] flex items-center gap-3 text-xs text-[#475467]">
-              <div className="w-7 h-7 rounded-lg bg-[#2c3691]/10 flex items-center justify-center shrink-0">
-                <ShieldCheck className="w-4 h-4 text-[#2c3691]" />
+            <div className="flex items-center gap-2.5 text-xs text-[#475467]">
+              <div className="w-6 h-6 rounded-lg bg-[#2c3691]/10 flex items-center justify-center shrink-0">
+                <ShieldCheck className="w-3.5 h-3.5 text-[#2c3691]" />
               </div>
-              <span className="leading-relaxed">
-                <strong className="text-[#131b3b] font-semibold">100% Verified Calicut Review:</strong> Every listing is checked by our local Calicut team &bull; Zero spam &bull; Direct local customer trust.
+              <span className="leading-snug">
+                <strong className="text-[#131b3b] font-semibold">Verified Calicut Directory:</strong> Listings checked by our local Calicut team &bull; Zero spam &bull; Direct customer enquiries.
               </span>
             </div>
           </div>
