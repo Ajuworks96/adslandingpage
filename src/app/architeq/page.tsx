@@ -87,7 +87,7 @@ export default function ArchiteqPage() {
             </span>
           </div>
           <div className="text-xs text-neutral-400">
-            © {new Date().getFullYear()} Architeq Architecture & Spatial Design Studio. All rights reserved.
+            © 2026 Architeq Architecture & Spatial Design Studio. All rights reserved.
           </div>
         </div>
       </footer>
