@@ -233,7 +233,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
 
               {/* Floating Feature Card (Upper Right quadrant, matching reference) */}
               <div className="absolute top-4 sm:top-6 right-4 sm:right-6 z-20">
-                <div className="relative bg-[#1d2329]/95 backdrop-blur-md text-white p-4 sm:p-5 rounded-2xl shadow-2xl border border-white/10 max-w-[210px] sm:max-w-[240px] transition-all hover:bg-[#1d2329]">
+                <div className="relative bg-[#131b3b]/95 backdrop-blur-md text-white p-4 sm:p-5 rounded-2xl shadow-2xl border border-white/15 max-w-[210px] sm:max-w-[240px] transition-all hover:bg-[#131b3b]">
                   
                   {/* Card Header with Emerald Dot */}
                   <div className="flex items-center justify-between">
@@ -244,7 +244,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
                   </div>
 
                   {/* Card Body */}
-                  <p className="text-[11px] sm:text-xs text-neutral-300 leading-relaxed mt-1.5">
+                  <p className="text-[11px] sm:text-xs text-blue-100/80 leading-relaxed mt-1.5">
                     Direct WhatsApp leads, Google Maps location &amp; top search discovery for Calicut businesses.
                   </p>
 
@@ -302,7 +302,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
               </div>
 
               {/* Bottom Left Badge: 100% Free Listing */}
-              <div className="absolute bottom-3 left-3 z-20 flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-black/65 backdrop-blur-md text-white text-[11px] font-semibold border border-white/10">
+              <div className="absolute bottom-3 left-3 z-20 flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#131b3b]/85 backdrop-blur-md text-white text-[11px] font-semibold border border-white/15">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#12b76a]" />
                 <span>100% Free Verified Listing</span>
               </div>
@@ -312,20 +312,20 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
 
         </div>
 
-        {/* BOTTOM ECOSYSTEM DOCK (Dark Rounded Bar Spanning Across 4 Core Calicut Sectors) */}
-        <div className="mt-12 sm:mt-16 bg-[#161c22] text-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 divide-y sm:divide-y-0 sm:divide-x-0 lg:divide-x divide-white/10">
+        {/* BOTTOM ECOSYSTEM DOCK (LiveCalicut Signature Blue Dock) */}
+        <div className="mt-12 sm:mt-16 bg-gradient-to-r from-[#101738] via-[#162354] to-[#1e2e73] text-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-[0_20px_50px_rgba(20,30,80,0.22)] border border-[#2c3691]/40">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 divide-y sm:divide-y-0 sm:divide-x-0 lg:divide-x divide-white/15">
             
             {/* Sector 1: Retail & SM Street */}
             <div className="pt-4 sm:pt-0 lg:px-4 first:lg:pl-0 flex items-start gap-4">
-              <div className="w-11 h-11 rounded-xl bg-white/5 border border-[#12b76a]/30 flex items-center justify-center text-[#12b76a] shrink-0 shadow-inner group-hover:scale-105 transition-transform">
+              <div className="w-11 h-11 rounded-xl bg-white/10 border border-[#38bdf8]/40 flex items-center justify-center text-[#38bdf8] shrink-0 shadow-inner group-hover:scale-105 transition-transform">
                 <ShoppingBag className="w-5 h-5 stroke-[1.8]" />
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-white tracking-wide">
                   Retail &amp; SM Street
                 </h3>
-                <p className="text-xs text-neutral-400 mt-1 leading-relaxed">
+                <p className="text-xs text-blue-100/80 mt-1 leading-relaxed">
                   From Sweet Meat Street to Mavoor Road, connect with daily local shoppers.
                 </p>
               </div>
@@ -333,14 +333,14 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
 
             {/* Sector 2: Dining & Cafes */}
             <div className="pt-4 sm:pt-0 lg:px-4 flex items-start gap-4">
-              <div className="w-11 h-11 rounded-xl bg-white/5 border border-[#12b76a]/30 flex items-center justify-center text-[#12b76a] shrink-0 shadow-inner">
+              <div className="w-11 h-11 rounded-xl bg-white/10 border border-[#38bdf8]/40 flex items-center justify-center text-[#38bdf8] shrink-0 shadow-inner">
                 <UtensilsCrossed className="w-5 h-5 stroke-[1.8]" />
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-white tracking-wide">
                   Dining &amp; Cafés
                 </h3>
-                <p className="text-xs text-neutral-400 mt-1 leading-relaxed">
+                <p className="text-xs text-blue-100/80 mt-1 leading-relaxed">
                   Attract food lovers searching for authentic Malabar dining &amp; modern cafés.
                 </p>
               </div>
@@ -348,14 +348,14 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
 
             {/* Sector 3: Home & Local Services */}
             <div className="pt-4 sm:pt-0 lg:px-4 flex items-start gap-4">
-              <div className="w-11 h-11 rounded-xl bg-white/5 border border-[#12b76a]/30 flex items-center justify-center text-[#12b76a] shrink-0 shadow-inner">
+              <div className="w-11 h-11 rounded-xl bg-white/10 border border-[#38bdf8]/40 flex items-center justify-center text-[#38bdf8] shrink-0 shadow-inner">
                 <Wrench className="w-5 h-5 stroke-[1.8]" />
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-white tracking-wide">
                   Services &amp; Healthcare
                 </h3>
-                <p className="text-xs text-neutral-400 mt-1 leading-relaxed">
+                <p className="text-xs text-blue-100/80 mt-1 leading-relaxed">
                   Plumbing, electrical, clinics, and repair experts booked in seconds.
                 </p>
               </div>
@@ -363,14 +363,14 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
 
             {/* Sector 4: IT & Cyberpark */}
             <div className="pt-4 sm:pt-0 lg:px-4 last:lg:pr-0 flex items-start gap-4">
-              <div className="w-11 h-11 rounded-xl bg-white/5 border border-[#12b76a]/30 flex items-center justify-center text-[#12b76a] shrink-0 shadow-inner">
+              <div className="w-11 h-11 rounded-xl bg-white/10 border border-[#38bdf8]/40 flex items-center justify-center text-[#38bdf8] shrink-0 shadow-inner">
                 <Laptop className="w-5 h-5 stroke-[1.8]" />
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-white tracking-wide">
                   IT Hubs &amp; Cyberpark
                 </h3>
-                <p className="text-xs text-neutral-400 mt-1 leading-relaxed">
+                <p className="text-xs text-blue-100/80 mt-1 leading-relaxed">
                   Promote tech agencies, co-working spaces, and talent across Calicut.
                 </p>
               </div>
