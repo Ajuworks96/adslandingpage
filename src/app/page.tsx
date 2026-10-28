@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
-import { ValueStrip } from '@/components/ValueStrip';
 import { TheProblem } from '@/components/TheProblem';
 import { IntroducingLiveCalicut } from '@/components/IntroducingLiveCalicut';
 import { ExploreCategories } from '@/components/ExploreCategories';
@@ -47,16 +46,13 @@ export default function Home() {
       {/* Top Navbar */}
       <Navbar onRegisterClick={() => openRegisterModal()} />
 
-      {/* SECTION 01 — HERO */}
+      {/* SECTION 01 — HERO (Includes integrated 4-sector ecosystem dock) */}
       <Hero
         onRegisterClick={(category) => openRegisterModal(category)}
         onExploreClick={scrollToExplore}
       />
 
-      {/* SECTION 02 — VALUE STRIP */}
-      <ValueStrip />
-
-      {/* SECTION 03 — THE PROBLEM */}
+      {/* SECTION 02 — THE PROBLEM */}
       <TheProblem onRegisterClick={() => openRegisterModal()} />
 
       {/* SECTION 04 — INTRODUCING LIVECALICUT */}
