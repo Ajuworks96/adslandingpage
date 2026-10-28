@@ -15,7 +15,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onRegisterClick }) => {
     <header className="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-[#e4e7ec] transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between">
         {/* Brand Logo */}
-        <a href="#hero" className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2c3691] rounded-lg">
+        <a href="#hero" className="flex flex-col items-start group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2c3691] rounded-lg py-1">
           <div className="relative">
             <Image
               src="/images/logo.png"
@@ -27,8 +27,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onRegisterClick }) => {
               className="h-6 sm:h-7 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
             />
           </div>
-          <span className="hidden sm:inline-block text-[10px] uppercase font-bold tracking-widest text-[#2c3691] border-l border-[#d0d5dd] pl-3">
-            Calicut Digital Ecosystem
+          <span className="text-[8.5px] sm:text-[9.5px] uppercase font-extrabold tracking-[0.16em] text-[#131b3b] mt-1 group-hover:text-[#2c3691] transition-colors leading-none">
+            Calicut&apos;s Digital Ecosystem
           </span>
         </a>
 
